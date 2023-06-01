@@ -29,6 +29,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+# 跳过文件夹下所有子文件夹和文件
+  - "HTML/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -40,7 +42,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -93,6 +95,21 @@ pagination_dir: page
 include:
 exclude:
 ignore:
+
+
+
+symbols_count_time:
+  #文章内是否显示
+  symbols: true
+  time: false
+  # 网页底部是否显示
+  total_symbols: true
+  total_time: false
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: 'mins.'
+
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
